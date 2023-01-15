@@ -1,6 +1,9 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import icon from '../../assets/seppia.png';
+import icon from '../../assets/icon.svg';
+import Button from '@mui/material/Button';
 import './App.css';
+
+import Steps from './Steps'
 
 const Hello = () => {
   return (
@@ -10,17 +13,31 @@ const Hello = () => {
         <img width="200" alt="icon" src={icon} />
       </div>
       <div className="Hello">
+        <Steps />
         <a
           href="https://www.codiga.io/blog/build-electron-typescript-react-app/"
           target="_blank"
           rel="noreferrer"
         >
-          <button type="button">
+          <Button variant="contained">
             <span role="img" aria-label="Boiler">
               
             </span>
             Boiler
-          </button>
+          </Button>
+        </a>
+
+        <a
+          href="https://mui.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button variant="contained">
+            <span role="img" aria-label="Material">
+
+            </span>
+            Material
+          </Button>
         </a>
 
         <a
@@ -28,12 +45,12 @@ const Hello = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button type="button">
+          <Button variant="contained">
             <span role="img" aria-label="Manual">
 
             </span>
             Manual
-          </button>
+          </Button>
         </a>
 
         <a
@@ -41,12 +58,12 @@ const Hello = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button type="button">
+          <Button variant="contained">
             <span role="img" aria-label="Telegram">
 
             </span>
             Telegram
-          </button>
+          </Button>
         </a>
       </div>
     </div>
