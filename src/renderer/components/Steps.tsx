@@ -46,7 +46,7 @@ export default function Steps() {
 
   return (
     <Box sx={{ width: '100%' }} >
-      <Box sx={{ borderBottom: 1, borderColor: 'Menu' } }>
+      <Box sx={}>
         <Tabs value={value} onChange={handleChange} aria-label="cuttle-fish" orientation="vertical">
           <Tab label="Welcome" {...a11yProps(0)} />
           <Tab label="Location" {...a11yProps(1)} />
