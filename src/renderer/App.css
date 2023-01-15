@@ -8,9 +8,9 @@ body {
   height: 100vh;
   background: linear-gradient(
     200.96deg,
-    #fedc2a -29.09%,
-    #dd5789 51.77%,
-    #7a2c9e 129.35%
+    hwb(48 86% 12%) -29.09%,
+    #2b0915 51.77%,
+    #13033f 129.35%
   );
   font-family: sans-serif;
   overflow-y: hidden;
