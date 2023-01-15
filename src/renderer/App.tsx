@@ -5,8 +5,7 @@ import './App.css';
 const Hello = () => {
   return (
     <div>
-      <h1>Cuttle-fish</h1>
-      <h2>OEM installer</h2>
+      <h1>Seppia: an OEM installer!</h1>
       <div className="Hello">
         <img width="200" alt="icon" src={icon} />
       </div>
