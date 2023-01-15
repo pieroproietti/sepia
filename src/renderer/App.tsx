@@ -11,24 +11,25 @@ const Hello = () => {
       </div>
       <div className="Hello">
         <a
-          href="https://penguins-eggs.net/book/italiano9.3.html"
+          href="https://www.codiga.io/blog/build-electron-typescript-react-app/"
           target="_blank"
           rel="noreferrer"
         >
           <button type="button">
-            <span role="img" aria-label="Instructions">
+            <span role="img" aria-label="Boiler">
               
             </span>
-            Run
+            Boiler
           </button>
         </a>
+
         <a
           href="https://penguins-eggs.net/book/italiano9.3.html"
           target="_blank"
           rel="noreferrer"
         >
           <button type="button">
-            <span role="img" aria-label="Instructions">
+            <span role="img" aria-label="Manual">
 
             </span>
             Manual
@@ -41,7 +42,7 @@ const Hello = () => {
           rel="noreferrer"
         >
           <button type="button">
-            <span role="img" aria-label="folded hands">
+            <span role="img" aria-label="Telegram">
 
             </span>
             Telegram
