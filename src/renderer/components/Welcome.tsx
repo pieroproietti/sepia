@@ -2,9 +2,15 @@ import Title from './elements/Title';
 import Buttons from './elements/Buttons'
 import Steps from './elements/Steps'
 
-import Box from '@mui/material/Box';
+// altro
+import Box from '@mui/material/Box'
 
-export default function Welcome() {
+type WelcomeProps = {
+  language?: string,
+}
+
+
+export default function Welcome({ language = ''}: WelcomeProps) {
   return (
     <>
       <Box>
