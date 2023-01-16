@@ -7,7 +7,7 @@ export default function Buttons() {
     href="https://www.codiga.io/blog/build-electron-typescript-react-app/"
     target="_blank"
     rel="noreferrer"
-  >
+    >
     <Button variant="contained">
       <span role="img" aria-label="Boiler">
         
@@ -53,6 +53,6 @@ export default function Buttons() {
       Telegram
     </Button>
   </a>
-  </>    
-    )
-    }
+</>    
+ )
+}
