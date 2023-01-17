@@ -1,5 +1,5 @@
 {
-  "description": "Seppia an OEM installer",
+  "description": "Seppia: an OEM installer",
   "keywords": [
     "electron",
     "react",
@@ -85,7 +85,7 @@
       "js",
       "jsx",
       "ts",
-      "tsx",  
+      "tsx",
       "json"
     ],
     "moduleNameMapper": {
