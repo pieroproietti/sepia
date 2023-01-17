@@ -12,9 +12,12 @@ seppia
   Seppia uses <a href="https://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="https://webpack.js.org/">Webpack</a> and <a href="https://www.npmjs.com/package/react-refresh">React Fast Refresh</a>.
 </p>
 
-Seppia is automatically installed by ```sudo krill --oem seppia --custom it```, and performs its action on the first boot of the installed machine.
+Seppia is automatically installed by ```sudo eggs install --oem seppia --custom it```, and performs its action on the first boot of the installed machine.
 
 At the end of user configuration, seppia is uninstalled.
+
+It is possible to write other OEM installers that can be used with eggs and pass the value during OEM system installation: ```sudo eggs install --oem yourd```.
+
 
 ![seppia](assets/seppia.png)
 
