@@ -4,6 +4,7 @@ import Steps from './elements/Steps'
 
 // altro
 import Box from '@mui/material/Box'
+import { Input } from '@mui/material';
 
 type WelcomeProps = {
   language?: string,
@@ -21,7 +22,8 @@ export default function Welcome({ language = ''}: WelcomeProps) {
           <Box flexDirection="row">
             <Steps />
             <Box flexDirection="column">
-              Benvenuto
+              Welcome
+              Qua andrebbe il form di benvenuto
             </Box>
           </Box>
         </Box>

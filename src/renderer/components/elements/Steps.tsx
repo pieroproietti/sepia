@@ -52,8 +52,7 @@ export default function Steps({ index = 1 }) {
     
     <Box sx={{ width: '100%' }} >
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-
-        <Tabs value={value} onChange={handleChange} aria-label="cuttle-fish" orientation="vertical">
+        <Tabs value={value} onChange={handleChange} aria-label="cuttle-fish" orientation="horizontal">
           <Tab label="Welcome" {...a11yProps(0)} />
           <Tab label="Location" {...a11yProps(1)} />
           <Tab label="Keyboard" {...a11yProps(2)} />
