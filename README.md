@@ -1,9 +1,7 @@
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
 
-penguins-eggs
-=============
-
-## Seppia
+seppia
+=======
 [![sources](https://img.shields.io/badge/github-sources-cyan)](https://github.com/pieroproietti/seppia)
 [![blog](https://img.shields.io/badge/blog-penguin's%20eggs-cyan)](https://penguins-eggs.net)
 [![guide](https://img.shields.io/badge/guide-penguin's%20eggs-cyan)](https://penguins-eggs.net/book/)
