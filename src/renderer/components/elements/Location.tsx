@@ -3,16 +3,10 @@
  * author: Piero Proietti
  * mail: piero.proietti@gmail.com
  */
+import ILocation from '../../interfaces/i-location'
 import Box from '@mui/material/Box'
 
-interface LocationProps {
-  region?: string,
-  zone?: string,
-  language?: string,
-  dateNumbers?: string
-}
-
-export default function Location( { region = 'Europe', zone = 'Rome', language = 'it_IT.UTF-9', dateNumbers = 'it_IT.UTF-9' }: LocationProps) {
+export default function Location( { region = 'Europe', zone = 'Rome', language = 'it_IT.UTF-9', dateNumbers = 'it_IT.UTF-9' }: ILocation) {
   return (
     <>
       <Box flexDirection="row">
@@ -20,6 +14,10 @@ export default function Location( { region = 'Europe', zone = 'Rome', language =
         zone: {zone} <br />
         language: {language} <br />
         dateNumbers: {dateNumbers} <br />
+        <br />
+        <br />
+        <br />
+
       </Box>
     </>
   )

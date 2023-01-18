@@ -4,17 +4,19 @@
  * mail: piero.proietti@gmail.com
  */
 import Box from '@mui/material/Box'
+import IWelcome from '../../interfaces/i-welcome'
 
-interface WelcomeProps {
-  language?: string
-}
-
-
-export default function Welcome({ language = 'it'}: WelcomeProps) {
+export default function Welcome({ language = 'it'}: IWelcome) {
   return (
     <>
       <Box flexDirection="column">
-        language: {language}
+        language: {language} <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </Box>
     </>
   )

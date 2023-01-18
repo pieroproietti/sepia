@@ -4,15 +4,9 @@
  * mail: piero.proietti@gmail.com
  */
 import Box from '@mui/material/Box'
+import IKeyboard from '../../interfaces/i-keyboard'
 
-interface keyboardProps {
-  keyboardModel?: string,
-  keyboardLayout?: string,
-  keyboardVariant?: string,
-  keyboardOptions?: string,
-}
-
-export default function Keyboard( { keyboardModel= 'pc105', keyboardLayout='it', keyboardVariant= '', keyboardOptions='' }:  keyboardProps) {
+export default function Keyboard( { keyboardModel= 'pc105', keyboardLayout='it', keyboardVariant= '', keyboardOptions='' }:  IKeyboard) {
   return (
     <>
       <Box flexDirection="row">
@@ -20,6 +14,9 @@ export default function Keyboard( { keyboardModel= 'pc105', keyboardLayout='it',
           layout: {keyboardLayout} <br />
           variant: {keyboardVariant} <br />
           options: {keyboardOptions} <br />
+          <br />
+          <br />
+          <br />
       </Box>
     </>
   )

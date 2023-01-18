@@ -25,6 +25,8 @@ export default function Users( { iface = 'eth0', addressType = 'dhcp', address =
         gateway: {gateway} <br />
         domain: {domain} <br />
         dns: {dns} <br />
+        <br />
+
       </Box>
     </>
   )
