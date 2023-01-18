@@ -5,8 +5,8 @@
  */
 import Box from '@mui/material/Box'
 
-type WelcomeProps = {
-  language?: string,
+interface WelcomeProps {
+  language?: string
 }
 
 

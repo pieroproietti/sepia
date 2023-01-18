@@ -5,7 +5,7 @@
  */
 import Box from '@mui/material/Box'
 
-type UsersProps = {
+interface UsersProps {
   name: string,
   fullname: string,
   password: string,

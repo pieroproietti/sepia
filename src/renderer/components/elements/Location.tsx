@@ -5,7 +5,7 @@
  */
 import Box from '@mui/material/Box'
 
-type LocationProps = {
+interface LocationProps {
   region?: string,
   zone?: string,
   language?: string,
@@ -16,10 +16,10 @@ export default function Location( { region = 'Europe', zone = 'Rome', language =
   return (
     <>
       <Box flexDirection="row">
-          region: {region} <br />
-          zone: {zone} <br />
-          language: {language} <br />
-          dateNumbers: {dateNumbers} <br />
+        region: {region} <br />
+        zone: {zone} <br />
+        language: {language} <br />
+        dateNumbers: {dateNumbers} <br />
       </Box>
     </>
   )

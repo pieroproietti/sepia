@@ -13,6 +13,7 @@ import Welcome from './elements/Welcome';
 import Location from './elements/Location';
 import Keyboard from './elements/Keyboard';
 import Users from './elements/Users';
+import Network from './elements/Network';
 
 interface stepsProps {
   children?: React.ReactNode;
@@ -72,7 +73,8 @@ export default function Steps({ index = 1 }) {
           <Tab label="Keyboard" {...a11yProps(2)} />
           <Tab label="Users" {...a11yProps(3)} />
           <Tab label="Network" {...a11yProps(4)} />
-          <Tab label="Finish" {...a11yProps(5)} />
+          <Tab label="Summary" {...a11yProps(5)} />
+          <Tab label="Finish" {...a11yProps(6)} />
         </Tabs>
       </Box>
 
@@ -89,15 +91,12 @@ export default function Steps({ index = 1 }) {
         <Users />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Network
+        <Network  />
       </TabPanel>
       <TabPanel value={value} index={5}>
         Summary
       </TabPanel>
-      <TabPanel value={value} index={7}>
-        Install
-      </TabPanel>
-      <TabPanel value={value} index={8}>
+      <TabPanel value={value} index={6}>
         Finish
       </TabPanel>
     </Box>

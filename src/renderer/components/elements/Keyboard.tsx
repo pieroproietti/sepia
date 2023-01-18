@@ -5,7 +5,7 @@
  */
 import Box from '@mui/material/Box'
 
-type keyboardProps = {
+interface keyboardProps {
   keyboardModel?: string,
   keyboardLayout?: string,
   keyboardVariant?: string,
