@@ -11,6 +11,7 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 import ILocation from '../../interfaces/i-location'
+import LanguageSelect from '../../lib/language-select'
 
 /**
  *
@@ -27,7 +28,7 @@ function RegionSelect() {
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="region-select-label">Language</InputLabel>
+        <InputLabel id="region-select-label">Region</InputLabel>
         <Select
           labelId="region-select-label"
           id="region-select"
@@ -58,7 +59,7 @@ export default function Location( { region = 'Europe', zone = 'Rome', language =
       <Box flexDirection="row">
         <RegionSelect />
         zone: {zone} <br />
-        language: {language} <br />
+        <LanguageSelect />
         dateNumbers: {dateNumbers} <br />
         <br />
         <br />

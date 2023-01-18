@@ -12,36 +12,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 // own
 import IWelcome from '../../interfaces/i-welcome'
-
-/**
- *
- * @returns
- */
-function LanguageSelect() {
-  const [lang, setLang] = React.useState('');
-
-  const handleChange = (event: SelectChangeEvent) => {
-    setLang(event.target.value as string);
-  };
-
-  return (
-    <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
-        <Select
-          labelId="lang-select-language-label"
-          id="lang-select-language"
-          value={lang}
-          label="Language"
-          onChange={handleChange}
-        >
-          <MenuItem value={1}>br</MenuItem>
-          <MenuItem value={2}>it</MenuItem>
-          <MenuItem value={3}>us</MenuItem>
-        </Select>
-      </FormControl>
-    </Box>
-  );
-}
+import LanguageSelect from '../../lib/language-select'
 
 /**
  *
