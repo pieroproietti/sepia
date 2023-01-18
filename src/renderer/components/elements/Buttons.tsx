@@ -1,3 +1,8 @@
+/**
+ * seppia: a first access system configurator
+ * author: Piero Proietti
+ * mail: piero.proietti@gmail.com
+ */
 import Button from '@mui/material/Button';
 
 export default function Buttons() {
@@ -10,7 +15,7 @@ export default function Buttons() {
     >
     <Button variant="contained">
       <span role="img" aria-label="Boiler">
-        
+
       </span>
       Boiler
     </Button>
@@ -53,6 +58,6 @@ export default function Buttons() {
       Telegram
     </Button>
   </a>
-</>    
+</>
  )
 }

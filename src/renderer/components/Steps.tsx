@@ -1,21 +1,28 @@
+/**
+ * seppia: a first access system configurator
+ * author: Piero Proietti
+ * mail: piero.proietti@gmail.com
+ */
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-interface TabPanelProps {
+import Welcome from './elements/Welcome';
+import Location from './elements/Location';
+
+interface stepsPros {
   children?: React.ReactNode;
   index: number;
   value: number;
 }
 
-type stepsPros = {
-  step?: number,
-}
-
-function TabPanel(props: TabPanelProps) {
+function TabPanel(props: stepsPros) {
   const { children, value, index, ...other } = props;
+
+  console.log('steps: ')
+  console.log(props)
 
   return (
     <div
@@ -41,6 +48,11 @@ function a11yProps(index: number) {
   };
 }
 
+/**
+ *
+ * @param param0
+ * @returns Steps
+ */
 export default function Steps({ index = 1 }) {
   const [value, setValue] = React.useState(0)
 
@@ -49,7 +61,7 @@ export default function Steps({ index = 1 }) {
   };
 
   return (
-    
+
     <Box sx={{ width: '100%' }} >
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="cuttle-fish" orientation="horizontal">
@@ -66,10 +78,10 @@ export default function Steps({ index = 1 }) {
       </Box>
 
       <TabPanel value={value} index={0}>
-        Welcome
+        <Welcome />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Location
+        <Location />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Keyboard
