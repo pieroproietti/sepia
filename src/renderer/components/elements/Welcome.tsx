@@ -10,10 +10,10 @@ type WelcomeProps = {
 }
 
 
-export default function Welcome({ language = 'us'}: WelcomeProps) {
+export default function Welcome({ language = 'it'}: WelcomeProps) {
   return (
     <>
-      <Box flexDirection="row">
+      <Box flexDirection="column">
         language: {language}
       </Box>
     </>

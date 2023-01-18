@@ -2,10 +2,14 @@
  * seppia: a first access system configurator
  * author: Piero Proietti
  * mail: piero.proietti@gmail.com
- */export default function Title() {
+ */
+import icon from '../../../../assets/icon.svg'
+
+export default function Title() {
     return (
         <div>
-        Seppia: an OEM installer
+        <img width="100" alt="icon" src={icon} />
+        &nbsp; Seppia: first access system configurator
         </div>
     )
 }

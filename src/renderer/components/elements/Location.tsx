@@ -17,7 +17,7 @@ export default function Location( { region = 'Europe', zone = 'Rome', language =
     <>
       <Box flexDirection="row">
           region: {region} <br />
-          zone: {region} <br />
+          zone: {zone} <br />
           language: {language} <br />
           dateNumbers: {dateNumbers} <br />
       </Box>

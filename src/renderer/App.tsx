@@ -4,7 +4,7 @@
  * mail: piero.proietti@gmail.com
  */
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
+import Title from './components/elements/Title'
 import './App.css';
 
 import Box from '@mui/material/Box'
@@ -17,8 +17,7 @@ const Seppia = () => {
   return (
     <div className="Seppia">
       <Box flexDirection="row">
-        <img width="100" alt="icon" src={icon} />
-        &nbsp; Seppia: an OEM installer
+        <Title />
         <Steps />
         <Buttons />
         </Box>

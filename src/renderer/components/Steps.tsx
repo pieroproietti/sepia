@@ -11,14 +11,16 @@ import Box from '@mui/material/Box';
 
 import Welcome from './elements/Welcome';
 import Location from './elements/Location';
+import Keyboard from './elements/Keyboard';
+import Users from './elements/Users';
 
-interface stepsPros {
+interface stepsProps {
   children?: React.ReactNode;
   index: number;
   value: number;
 }
 
-function TabPanel(props: stepsPros) {
+function TabPanel(props: stepsProps) {
   const { children, value, index, ...other } = props;
 
   console.log('steps: ')
@@ -62,18 +64,15 @@ export default function Steps({ index = 1 }) {
 
   return (
 
-    <Box sx={{ width: '100%' }} >
+    <Box sx={{ width: '1024'  }} >
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="cuttle-fish" orientation="horizontal">
           <Tab label="Welcome" {...a11yProps(0)} />
           <Tab label="Location" {...a11yProps(1)} />
           <Tab label="Keyboard" {...a11yProps(2)} />
-          <Tab label="Partitions" {...a11yProps(3)} />
-          <Tab label="Users" {...a11yProps(4)} />
-          <Tab label="Network" {...a11yProps(5)} />
-          <Tab label="Summary" {...a11yProps(6)} />
-          <Tab label="Install" {...a11yProps(7)} />
-          <Tab label="Finish" {...a11yProps(8)} />
+          <Tab label="Users" {...a11yProps(3)} />
+          <Tab label="Network" {...a11yProps(4)} />
+          <Tab label="Finish" {...a11yProps(5)} />
         </Tabs>
       </Box>
 
@@ -84,18 +83,15 @@ export default function Steps({ index = 1 }) {
         <Location />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Keyboard
+        <Keyboard />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Partitions
+        <Users />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Users
-      </TabPanel>
-      <TabPanel value={value} index={5}>
         Network
       </TabPanel>
-      <TabPanel value={value} index={6}>
+      <TabPanel value={value} index={5}>
         Summary
       </TabPanel>
       <TabPanel value={value} index={7}>
