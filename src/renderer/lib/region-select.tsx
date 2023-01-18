@@ -17,7 +17,13 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
  */
 export default function RegionSelect() {
   const [region, setRegion] = React.useState('');
-  // ['Atlantic', 'Africa', 'America', 'Antarctica', 'Artic', 'Australia', 'Europe', 'India', 'Pacific']
+  const fs = require('fs')
+  let zones = fs.readFileSync('/usr/share/zoneinfo/')
+  process.noAsar = true
+  console.log(zones)
+
+
+  let elem = ''
 
   const handleChange = (event: SelectChangeEvent) => {
     setRegion(event.target.value as string);
