@@ -4,17 +4,9 @@
  * mail: piero.proietti@gmail.com
  */
 import Box from '@mui/material/Box'
+import IUsers from '../../interfaces/i-users'
 
-interface UsersProps {
-  name: string,
-  fullname: string,
-  password: string,
-  rootPassword: string,
-  hostname: string,
-  autologin: boolean,
-  sameUserPassword: boolean
-}
-export default function Users( { name = 'seppia', fullname = 'seppia', password = 'evolution', rootPassword = 'evolution', hostname =  'colibri', autologin = true, sameUserPassword = true }: UsersProps) {
+export default function Users( { name = 'seppia', fullname = 'seppia', password = 'evolution', rootPassword = 'evolution', hostname =  'colibri', autologin = true, sameUserPassword = true }: IUsers) {
   return (
     <>
       <Box flexDirection="row">

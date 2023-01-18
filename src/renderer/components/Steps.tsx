@@ -14,6 +14,7 @@ import Location from './elements/Location';
 import Keyboard from './elements/Keyboard';
 import Users from './elements/Users';
 import Network from './elements/Network';
+import Summary from './elements/Summary';
 
 interface stepsProps {
   children?: React.ReactNode;
@@ -94,7 +95,7 @@ export default function Steps({ index = 1 }) {
         <Network  />
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Summary
+        <Summary />
       </TabPanel>
       <TabPanel value={value} index={6}>
         Finish
