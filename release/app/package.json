@@ -1,7 +1,7 @@
 {
   "name": "seppia",
-  "version": "0.0.1",
-  "description": "Seppia an OEM installer",
+  "version": "0.0.2",
+  "description": "Seppia: first access system configurator ",
   "license": "MIT",
   "author": {
     "name": "Piero Proietti",
