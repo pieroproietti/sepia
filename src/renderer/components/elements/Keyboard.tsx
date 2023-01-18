@@ -10,14 +10,15 @@ export default function Keyboard( { keyboardModel= 'pc105', keyboardLayout='it',
   return (
     <>
       <Box flexDirection="row">
-          model: {keyboardModel} <br />
-          layout: {keyboardLayout} <br />
-          variant: {keyboardVariant} <br />
-          options: {keyboardOptions} <br />
-          <br />
-          <br />
-          <br />
+        model: {keyboardModel} <br />
+        layout: {keyboardLayout} <br />
+        variant: {keyboardVariant} <br />
+        options: {keyboardOptions} <br />
+        <br />
+        <br />
+        <br />
       </Box>
     </>
   )
 }
+

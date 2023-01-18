@@ -27,7 +27,6 @@ function LanguageSelect() {
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Language</InputLabel>
         <Select
           labelId="lang-select-language-label"
           id="lang-select-language"
