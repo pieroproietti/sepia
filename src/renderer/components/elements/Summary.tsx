@@ -14,10 +14,10 @@ export default function Summary({ welcome = {} as IWelcome, location= {} as ILoc
   return (
     <>
       <Box flexDirection="column">
-        {welcome.language} <br />
-        {location.region}<br />
-        {users.name}<br />
-        {network.iface}<br />
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <br />
