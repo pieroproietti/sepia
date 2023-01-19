@@ -25,7 +25,9 @@ It is possible to have others first access system configurators that can be used
  * start in dev mode: ```pnpm start```
  * build deb package: ```pnpm package```
 
-# Seppia
+# 
+# [Our mascote ](https://en.wikipedia.org/wiki/Common_cuttlefish)
+**Sepia oficinalis**
 ![seppia](assets/seppia.png)
 
 ## License
