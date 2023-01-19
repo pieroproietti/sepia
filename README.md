@@ -26,8 +26,8 @@ It is possible to have others first access system configurators that can be used
  * build deb package: ```pnpm package```
 
 # 
-# [Our mascote ](https://en.wikipedia.org/wiki/Common_cuttlefish)
-**Sepia oficinalis**
+# Our mascote
+[Sepia oficinalis](https://en.wikipedia.org/wiki/Common_cuttlefish)
 ![seppia](assets/seppia.png)
 
 ## License
