@@ -19,7 +19,7 @@ At the end of user configuration, seppia is uninstalled.
 It is possible to have others first access system configurators that can be used with eggs passing the value during OEM system installation: ```sudo eggs install --oem your-first-access-system-configurator```.
 
  ## Develop
- I'm using [pnpm](https://pnpm.io/) here, so you must install it: ```sudo npn install pnpm -g```.
+ I'm using [pnpm](https://pnpm.io/) here, so before of all, you must install it: ```sudo npm install pnpm -g```.
 
  * install packages: ```pnpm i```
  * start in dev mode: ```pnpm start```
@@ -27,8 +27,11 @@ It is possible to have others first access system configurators that can be used
 
 # 
 # Our mascote
+
+Chasing [calamares](https://calamares.io/), I have already chosen as a mascot for my CLI installer the name of [krill](https://penguins-eggs), continuing in the line here is [seppia](https://github.com/pieroproietti/seppia)
+
 [Sepia oficinalis](https://en.wikipedia.org/wiki/Common_cuttlefish)
-![seppia](assets/seppia.png)
+
 
 ## License
 
