@@ -31,8 +31,7 @@ It is possible to have others first access system configurators that can be used
 Chasing [calamares](https://calamares.io/), I have already chosen as a mascot for my CLI installer the name of [krill](https://penguins-eggs), continuing in the line here is [seppia](https://github.com/pieroproietti/seppia)
 
 [Sepia oficinalis](https://en.wikipedia.org/wiki/Common_cuttlefish)
-
-
+![seppia](assets/seppia.png)
 ## License
 
 MIT © 2023 [Piero Proietti](https://github.com/pieroproietti/LICENZE)
