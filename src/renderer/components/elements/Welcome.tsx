@@ -12,7 +12,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 // own
 import IWelcome from '../../interfaces/i-welcome'
-import LanguageSelect from '../../lib/language-select'
+import SelectLanguage from './select-language-'
 
 /**
  *
@@ -23,7 +23,7 @@ export default function Welcome({ language = 'it'}: IWelcome) {
   return (
     <>
       <Box flexDirection="column">
-        <LanguageSelect />
+        <SelectLanguage />
         <br />
         <br />
         <br />

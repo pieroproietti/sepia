@@ -1,6 +1,7 @@
 import { contextBridge, ipcRenderer, IpcRendererEvent } from 'electron';
+import fs from 'fs'
 
-export type Channels = 'ipc-example';
+export type Channels = 'ipc-seppia';
 
 const electronHandler = {
   ipcRenderer: {

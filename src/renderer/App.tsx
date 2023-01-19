@@ -4,12 +4,10 @@
  * mail: piero.proietti@gmail.com
  */
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import Title from './components/elements/Title'
 import './App.css';
 
 import Box from '@mui/material/Box'
-import Welcome from './components/elements/Welcome'
-import Location from './components/elements/Location'
+import Title from './components/elements/Title'
 import Steps from './components/Steps'
 import Buttons from './components/elements/Buttons';
 

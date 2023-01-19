@@ -10,33 +10,37 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
+
 /**
  *
  * @returns
  */
-export default function LanguageSelect() {
-  const [lang, setLang] = React.useState('');
+export default function SelectZone() {
+  const [zone, setZone] = React.useState('');
+
+  let elem = ''
 
   const handleChange = (event: SelectChangeEvent) => {
-    setLang(event.target.value as string);
+    setZone(event.target.value as string);
   };
 
   return (
     <Box sx={{ minWidth: 120 }}>
-      <InputLabel id="input-label-id">Language</InputLabel>
       <FormControl fullWidth>
+        <InputLabel id="select-zone-input-label">Zone</InputLabel>
         <Select
-          labelId="label-id"
-          id="lang-select-language"
-          value={lang}
-          label="Language"
+          labelId="select-zone-label"
+          id="select-zone"
+          value={zone}
+          label="Zone"
           onChange={handleChange}
         >
-          <MenuItem value={1}>br</MenuItem>
-          <MenuItem value={2}>it</MenuItem>
-          <MenuItem value={3}>us</MenuItem>
+          <MenuItem value={'new_york'}>New York</MenuItem>
+          <MenuItem value={'mato_grosso'}>Mato Grosso</MenuItem>
+          <MenuItem value={'rome'}>Rome</MenuItem>
         </Select>
       </FormControl>
     </Box>
   );
 }
+

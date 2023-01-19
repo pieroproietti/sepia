@@ -15,12 +15,12 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
  *
  * @returns
  */
-export default function RegionSelect() {
+export default function SelectRegion() {
   const [region, setRegion] = React.useState('');
-  const fs = require('fs')
-  let zones = fs.readFileSync('/usr/share/zoneinfo/')
-  process.noAsar = true
-  console.log(zones)
+
+  // let zones =   fs.readdirSync('/usr/share/zoneinfo/')
+  // process.noAsar = true
+  // console.log(zones)
 
 
   let elem = ''
