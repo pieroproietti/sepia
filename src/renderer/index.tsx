@@ -1,5 +1,5 @@
 /**
- * seppia: a first access system configurator
+ * sepia: a first access system configurator
  * author: Piero Proietti
  * mail: piero.proietti@gmail.com
  */
@@ -11,8 +11,8 @@ const root = createRoot(container);
 root.render(<App />);
 
 // calling IPC exposed from preload script
-window.electron.ipcRenderer.once('ipc-seppia', (arg) => {
+window.electron.ipcRenderer.once('ipc-sepia', (arg) => {
   // eslint-disable-next-line no-console
   console.log(arg);
 });
-window.electron.ipcRenderer.sendMessage('ipc-seppia', ['ping']);
+window.electron.ipcRenderer.sendMessage('ipc-sepia', ['ping']);

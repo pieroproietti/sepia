@@ -1,5 +1,5 @@
 {
-  "description": "seppia: a first access system configurator",
+  "description": "sepia: a first access system configurator",
   "keywords": [
     "electron",
     "react",
@@ -9,13 +9,13 @@
     "webpack",
     "oem-installer"
   ],
-  "homepage": "https://github.com/pieroproietti/seppia#readme",
+  "homepage": "https://github.com/pieroproietti/sepia#readme",
   "bugs": {
-    "url": "https://github.com/pieroproietti/seppia/issues"
+    "url": "https://github.com/pieroproietti/sepia/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pieroproietti/seppia.git"
+    "url": "git+https://github.com/pieroproietti/sepia.git"
   },
   "license": "MIT",
   "author": {
@@ -187,8 +187,8 @@
     "webpack-merge": "^5.8.0"
   },
   "build": {
-    "productName": "seppia",
-    "appId": "net.penguins-eggs.seppia",
+    "productName": "sepia",
+    "appId": "net.penguins-eggs.sepia",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [
@@ -246,7 +246,7 @@
     "publish": {
       "provider": "github",
       "owner": "pieroproietti",
-      "repo": "seppia"
+      "repo": "sepia"
     }
   },
   "collective": {

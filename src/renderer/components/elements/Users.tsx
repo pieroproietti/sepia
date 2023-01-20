@@ -1,12 +1,12 @@
 /**
- * seppia: a first access system configurator
+ * sepia: a first access system configurator
  * author: Piero Proietti
  * mail: piero.proietti@gmail.com
  */
 import Box from '@mui/material/Box'
 import IUsers from '../../interfaces/i-users'
 
-export default function Users( { name = 'seppia', fullname = 'seppia', password = 'evolution', rootPassword = 'evolution', hostname =  'colibri', autologin = true, sameUserPassword = true }: IUsers) {
+export default function Users( { name = 'sepia', fullname = 'sepia', password = 'evolution', rootPassword = 'evolution', hostname =  'colibri', autologin = true, sameUserPassword = true }: IUsers) {
   return (
     <>
       <Box flexDirection="row">

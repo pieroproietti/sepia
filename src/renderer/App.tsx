@@ -1,5 +1,5 @@
 /**
- * seppia: a first access system configurator
+ * sepia: a first access system configurator
  * author: Piero Proietti
  * mail: piero.proietti@gmail.com
  */
@@ -11,9 +11,9 @@ import Title from './components/elements/Title'
 import Steps from './components/Steps'
 import Buttons from './components/elements/Buttons';
 
-const Seppia = () => {
+const Sepia = () => {
   return (
-    <div className="Seppia">
+    <div className="Sepia">
       <Box flexDirection="row">
         <Title />
         <Steps />
@@ -27,7 +27,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Seppia />} />
+        <Route path="/" element={<Sepia />} />
       </Routes>
     </Router>
   );

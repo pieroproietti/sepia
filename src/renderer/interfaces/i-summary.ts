@@ -4,7 +4,7 @@ import IUsers from "./i-users";
 import IWelcome from "./i-welcome";
 
 /**
- * seppia: a first access system configurator
+ * sepia: a first access system configurator
  * author: Piero Proietti
  * mail: piero.proietti@gmail.com
  */

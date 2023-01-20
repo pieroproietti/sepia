@@ -1,12 +1,12 @@
 {
-  "name": "seppia",
+  "name": "sepia",
   "version": "0.0.2",
-  "description": "Seppia: first access system configurator ",
+  "description": "Sepia: first access system configurator ",
   "license": "MIT",
   "author": {
     "name": "Piero Proietti",
     "email": "piero.proietti@gmail.com",
-    "url": "https://github.com/pieroproietti/seppia"
+    "url": "https://github.com/pieroproietti/sepia"
   },
   "main": "./dist/main/main.js",
   "scripts": {

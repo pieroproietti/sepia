@@ -1,5 +1,5 @@
 /**
- * seppia: a first access system configurator
+ * sepia: a first access system configurator
  * author: Piero Proietti
  * mail: piero.proietti@gmail.com
  */
@@ -9,7 +9,7 @@ export default function Title() {
     return (
         <div>
         <img width="100" alt="icon" src={icon} />
-        &nbsp; Seppia: first access system configurator
+        &nbsp; Sepia: first access system configurator
         </div>
     )
 }

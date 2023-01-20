@@ -1,5 +1,5 @@
 /**
- * seppia: a first access system configurator
+ * sepia: a first access system configurator
  * author: Piero Proietti
  * mail: piero.proietti@gmail.com
  */
@@ -9,7 +9,20 @@ export default function Buttons() {
     return (
         <>
     <a
-    href="https://www.codiga.io/blog/build-electron-typescript-react-app/"
+    href="https://github.com/pieroproietti/sepia"
+    target="_blank"
+    rel="noreferrer"
+    >
+    <Button variant="contained">
+      <span role="img" aria-label="Sepia">
+
+      </span>
+      Sepia
+    </Button>
+    </a>
+
+    <a
+    href="https://github.com/electron-react-boilerplate/electron-react-boilerplate"
     target="_blank"
     rel="noreferrer"
     >
