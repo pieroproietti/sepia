@@ -15,24 +15,22 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
  *
  * @returns
  */
-export default function SelectDataNumers() {
-  const [dataNumers, setDataNumers] = React.useState('');
-
-  let elem = ''
+export default function SelectKeyboardLayout() {
+  const [keyboardLayout, setKeyboardLayout] = React.useState('');
 
   const handleChange = (event: SelectChangeEvent) => {
-    setDataNumers(event.target.value as string);
+    setKeyboardLayout(event.target.value as string);
   };
 
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="select-data-numbers-input-label">Data/Number</InputLabel>
+        <InputLabel id="select-layout-input-label">Layout</InputLabel>
         <Select
-          labelId="select-data-numers-label"
-          id="select-data-numbers"
-          value={dataNumers}
-          label="Data/Numbers"
+          labelId="select-layout-label"
+          id="select-layout"
+          value={keyboardLayout}
+          label="Layout"
           onChange={handleChange}
         >
           <MenuItem value={1}>br</MenuItem>
@@ -43,4 +41,5 @@ export default function SelectDataNumers() {
     </Box>
   );
 }
+
 

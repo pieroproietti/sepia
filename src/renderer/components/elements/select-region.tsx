@@ -18,12 +18,6 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 export default function SelectRegion() {
   const [region, setRegion] = React.useState('');
 
-  // let zones =   fs.readdirSync('/usr/share/zoneinfo/')
-  // process.noAsar = true
-  // console.log(zones)
-
-
-  let elem = ''
 
   const handleChange = (event: SelectChangeEvent) => {
     setRegion(event.target.value as string);

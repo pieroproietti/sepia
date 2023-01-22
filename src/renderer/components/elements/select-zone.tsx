@@ -10,6 +10,9 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
+// Come farlo passare per ipcRenderer?
+// import fs from 'fs'
+// let zones = fs.readdirSync('/usr/share/zoneinfo/')
 
 /**
  *
@@ -18,10 +21,9 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 export default function SelectZone() {
   const [zone, setZone] = React.useState('');
 
-  let elem = ''
-
   const handleChange = (event: SelectChangeEvent) => {
     setZone(event.target.value as string);
+
   };
 
   return (
@@ -35,12 +37,19 @@ export default function SelectZone() {
           label="Zone"
           onChange={handleChange}
         >
-          <MenuItem value={'new_york'}>New York</MenuItem>
-          <MenuItem value={'mato_grosso'}>Mato Grosso</MenuItem>
-          <MenuItem value={'rome'}>Rome</MenuItem>
+          <MenuItem value={'Atlantic'}>Atlantic</MenuItem>
+          <MenuItem value={'Africa'}>Africa</MenuItem>
+          <MenuItem value={'America'}>America</MenuItem>
+          <MenuItem value={'Antartica'}>Antartica</MenuItem>
+          <MenuItem value={'Artic'}>Artic</MenuItem>
+          <MenuItem value={'Australia'}>Australia</MenuItem>
+          <MenuItem value={'Europe'}>Europe</MenuItem>
+          <MenuItem value={'India'}>India</MenuItem>
+          <MenuItem value={'Pacific'}>Pacific</MenuItem>`
         </Select>
       </FormControl>
     </Box>
   );
 }
+
 
