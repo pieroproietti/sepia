@@ -20,11 +20,20 @@ export default function Users( { name = 'artisan', fullname = 'Piero Proietti', 
 
           <TextField id="username" label="User name" variant="standard" value={name}/>
           <TextField id="fullname" label="Full user name" variant="standard" value={fullname} />
+          <FormControlLabel
+            id="autologin"
+            name="autologin"
+            value={autologin}
+            control={<Checkbox defaultChecked />}
+            label="Autologin" />
           <TextField id="password" label="User password" variant="standard" value={password} />
-          <FormControlLabel control={<Checkbox defaultChecked />} label="Autologin" />
-          <Checkbox id="autologin" name="autologin" value={autologin} />
           <TextField id="hostname" label="Host name" variant="standard" value={hostname} />
-          <Checkbox id="sameUserPassword" name="sameUserPassword" value={sameUserPassword} />
+          <FormControlLabel
+            id="sameUserPassword"
+            name="sameUserPassword"
+            value={sameUserPassword}
+            control={<Checkbox defaultChecked />}
+            label="Same user password" />
           <TextField id="rootPassword" label="Root password" variant="standard" value={password} />
         </FormGroup>
       </Box>
