@@ -66,8 +66,7 @@ export default function Steps({ index = 1 }) {
   };
 
   return (
-
-    <Box sx={{ width: '1024'  }} >
+    <Box sx={{ width: '1024', height: '768' }} >
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="cuttle-fish" orientation="horizontal">
           <Tab label="Welcome" {...a11yProps(0)} />

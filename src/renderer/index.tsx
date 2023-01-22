@@ -11,7 +11,8 @@ const root = createRoot(container);
 root.render(<App />);
 
 /**
- * er problem è qua!
+ * er problem è qua
+ *
  * https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues/3192#issuecomment-1219151506
  *
 // calling IPC exposed from preload script
