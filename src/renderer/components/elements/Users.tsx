@@ -10,13 +10,15 @@ export default function Users( { name = 'sepia', fullname = 'sepia', password = 
   return (
     <>
       <Box flexDirection="row">
-      name: {name} <br />
-          fullname: {fullname} <br />
-          password: {password} <br />
-          rootPassword: {rootPassword} <br />
-          hostname: {hostname} <br />
-          autologin: {autologin} <br />
-          sameUserPassword: {sameUserPassword} <br />
+        <form>
+          name: <input type="text" name="name" value={name} /><br />
+          fullname: <input type="text" name="fullname" value={fullname} /><br />
+          password: <input type="password" name="password" value={password} /><br />
+          rootPassword: <input type="password" name="rootpassword" value={rootPassword} /><br />
+          hostname: <input type="text" name="hostname" value={hostname} /><br />
+          autologin: <input type="radio" name="autologin"/><br />
+          sameUserPassword: <input type="radio" name="sameUserPassword"/><br />
+        </form>
       </Box>
     </>
   )

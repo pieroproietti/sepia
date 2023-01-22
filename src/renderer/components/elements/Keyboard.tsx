@@ -5,16 +5,24 @@
  */
 import Box from '@mui/material/Box'
 import IKeyboard from '../../interfaces/i-keyboard'
+import SelectKeyboardModel from './select-keyboard-model'
 import SelectKeyboardLayout from './select-keyboard-layout'
+import SelectKeyboardVariant from './select-keyboard-variant'
+import SelectKeyboardOption from './select-keyboard-option'
 
+/**
+ *
+ * @param param0
+ * @returns
+ */
 export default function Keyboard( { keyboardModel= 'pc105', keyboardLayout='it', keyboardVariant= '', keyboardOptions='' }:  IKeyboard) {
   return (
     <>
       <Box flexDirection="row">
-        model: {keyboardModel} <br />
+        <SelectKeyboardModel />
         <SelectKeyboardLayout />
-        variant: {keyboardVariant} <br />
-        options: {keyboardOptions} <br />
+        <SelectKeyboardVariant />
+        <SelectKeyboardOption />
         <br />
         <br />
         <br />

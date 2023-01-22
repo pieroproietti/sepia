@@ -7,7 +7,7 @@ import Box from '@mui/material/Box'
 
 import ILocation from '../../interfaces/i-location'
 import SelectDataNumers from './select-data-numbers'
-import SelectLanguage from './select-language-'
+import SelectLanguage from './select-language'
 import SelectRegion from './select-region'
 import SelectZone from './select-zone'
 
@@ -19,10 +19,6 @@ export default function Location( { region = 'Europe', zone = 'Rome', language =
         <SelectZone />
         <SelectLanguage />
         <SelectDataNumers />
-        <br />
-        <br />
-        <br />
-
       </Box>
     </>
   )
