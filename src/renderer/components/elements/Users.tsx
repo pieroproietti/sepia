@@ -17,23 +17,24 @@ export default function Users( { name = 'artisan', fullname = 'Piero Proietti', 
     <>
       <Box flexDirection="row">
         <FormGroup>
-
           <TextField id="username" label="User name" variant="standard" value={name}/>
           <TextField id="fullname" label="Full user name" variant="standard" value={fullname} />
+          <TextField id="password" label="User password" variant="standard" value={password} />
           <FormControlLabel
             id="autologin"
             name="autologin"
-            value={autologin}
-            control={<Checkbox defaultChecked />}
-            label="Autologin" />
-          <TextField id="password" label="User password" variant="standard" value={password} />
+            label="Autologin"
+            control={<Checkbox value={autologin} />}
+          />
+
           <TextField id="hostname" label="Host name" variant="standard" value={hostname} />
+
           <FormControlLabel
             id="sameUserPassword"
             name="sameUserPassword"
-            value={sameUserPassword}
-            control={<Checkbox defaultChecked />}
-            label="Same user password" />
+            label="Use same user password"
+            control={<Checkbox value={sameUserPassword} />}
+          />
           <TextField id="rootPassword" label="Root password" variant="standard" value={password} />
         </FormGroup>
       </Box>

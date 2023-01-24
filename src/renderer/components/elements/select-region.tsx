@@ -10,14 +10,16 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
+import {IZones} from './zones'
+import zones from './zones'
+
 
 /**
  *
  * @returns
  */
-export default function SelectRegion() {
+export default function SelectRegion(zone: string) {
   const [region, setRegion] = React.useState('');
-
 
   const handleChange = (event: SelectChangeEvent) => {
     setRegion(event.target.value as string);

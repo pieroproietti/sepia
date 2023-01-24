@@ -3,8 +3,6 @@
  * author: Piero Proietti
  * mail: piero.proietti@gmail.com
  */
-
-
 const africa = [
   'Abidjan',
   'Accra',
@@ -352,8 +350,6 @@ const australia = [
   'Yancowinna'
 ]
 
-
-
 const europe = [
   'Amsterdam',
   'Andorra',
@@ -548,24 +544,24 @@ const etc = [
   'Zulu'
 ]
 
-const products = [
-  { id: 1, title: 'Cabbage' },
-  { id: 2, title: 'Garlic'  },
-  { id: 3, title: 'Apple' },
-];
+export interface IZones {
+  zone: string,
+  regions: string[]
+}
 
-let zoneinfo = [
-  ['africa', africa],
-  ['america', america],
-  ['antarctica', antartica],
-  ['artic',artic],
-  ['asia',asia],
-  ['australia',australia],
-  ['europe',europe],
-  ['atlantic', atlantic],
-  ['ondian', indian],
-  ['pacific', pacific ],
-  ['etc', etc],
-  ['us', us],
+let zones = [
+  {'africa' : africa},
+  {'america': america},
+  {'antarctica': antartica},
+  {'artic': artic},
+  {'asia': asia},
+  {'australia': australia},
+  {'europe': europe},
+  {'atlantic': atlantic},
+  {'ondian': indian},
+  {'pacific': pacific},
+  {'etc': etc},
+  {'us': us},
 ]
-export default zoneinfo
+
+export default zones

@@ -1,6 +1,11 @@
+/**
+ * sepia: a first access system configurator
+ * author: Piero Proietti
+ * mail: piero.proietti@gmail.com
+ */
 import { contextBridge, ipcRenderer, IpcRendererEvent } from 'electron';
 
-export type Channels = 'ipc-example';
+export type Channels = 'ipc-sepia';
 
 const electronHandler = {
   ipcRenderer: {
