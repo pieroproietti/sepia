@@ -29,8 +29,10 @@ Actually using npm packed manager.
 
 Chasing [calamares](https://calamares.io/), I have already chosen as a mascot for my CLI installer the name of [krill](https://penguins-eggs), continuing in the line here is [sepia](https://github.com/pieroproietti/sepia)
 
-[Sepia oficinalis](https://en.wikipedia.org/wiki/Common_cuttlefish)
-![sepia](assets/sepia.png)
+
+[Sepia officinalis Linnaeus, 1758](https://en.wikipedia.org/wiki/Common_cuttlefish)
+![sepia](assets/sepia.png) Cuttlefish at Nausicaä Centre National de la Mer, Boulogne-sur-Mer, France © Hans Hillewaert
+
 ## License
 
 MIT © 2023 [Piero Proietti](https://github.com/pieroproietti/LICENZE)
