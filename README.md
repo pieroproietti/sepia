@@ -31,7 +31,7 @@ Chasing [calamares](https://calamares.io/), I have already chosen as a mascot fo
 
 
 [Sepia officinalis Linnaeus, 1758](https://en.wikipedia.org/wiki/Common_cuttlefish)
-![sepia](assets/sepia.png) Cuttlefish at Nausicaä Centre National de la Mer, Boulogne-sur-Mer, France © Hans Hillewaert
+![sepia](assets/sepia.jpg) Cuttlefish at Nausicaä Centre National de la Mer, Boulogne-sur-Mer, France © Hans Hillewaert
 
 ## License
 
