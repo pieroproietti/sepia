@@ -1,27 +1,29 @@
 {
-  "description": "sepia: a first access system configurator",
+  "description": "A foundation for scalable desktop apps",
   "keywords": [
     "electron",
+    "boilerplate",
     "react",
     "typescript",
     "ts",
     "sass",
     "webpack",
-    "oem-installer"
+    "hot",
+    "reload"
   ],
-  "homepage": "https://github.com/pieroproietti/sepia#readme",
+  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
   "bugs": {
-    "url": "https://github.com/pieroproietti/sepia/issues"
+    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pieroproietti/sepia.git"
+    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Piero Proietti",
-    "email": "piero.proietti@gmail.com",
-    "url": "https://penguins-eggs.net"
+    "name": "Electron React Boilerplate Maintainers",
+    "email": "electronreactboilerplate@gmail.com",
+    "url": "https://electron-react-boilerplate.js.org"
   },
   "contributors": [
     {
@@ -32,15 +34,15 @@
   ],
   "main": "./src/main/main.ts",
   "scripts": {
-    "build": "concurrently \"pnpm run build:main\" \"pnpm run build:renderer\"",
+    "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
     "build:main": "cross-env NODE_ENV=production TS_NODE_TRANSPILE_ONLY=true webpack --config ./.erb/configs/webpack.config.main.prod.ts",
     "build:renderer": "cross-env NODE_ENV=production TS_NODE_TRANSPILE_ONLY=true webpack --config ./.erb/configs/webpack.config.renderer.prod.ts",
     "postinstall": "ts-node .erb/scripts/check-native-dep.js && electron-builder install-app-deps && cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack --config ./.erb/configs/webpack.config.renderer.dev.dll.ts",
     "lint": "cross-env NODE_ENV=development eslint . --ext .js,.jsx,.ts,.tsx",
-    "package": "ts-node ./.erb/scripts/clean.js dist && pnpm run build && electron-builder build --publish never",
+    "package": "ts-node ./.erb/scripts/clean.js dist && npm run build && electron-builder build --publish never",
     "prepare": "husky install",
     "rebuild": "electron-rebuild --parallel --types prod,dev,optional --module-dir release/app",
-    "start": "ts-node ./.erb/scripts/check-port-in-use.js && pnpm run start:renderer",
+    "start": "ts-node ./.erb/scripts/check-port-in-use.js && npm run start:renderer",
     "start:main": "cross-env NODE_ENV=development electronmon -r ts-node/register/transpile-only .",
     "start:preload": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack --config ./.erb/configs/webpack.config.preload.dev.ts",
     "start:renderer": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack serve --config ./.erb/configs/webpack.config.renderer.dev.ts",
@@ -202,6 +204,7 @@
       "target": {
         "target": "default",
         "arch": [
+          "arm64",
           "x64"
         ]
       },
@@ -246,8 +249,8 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "pieroproietti",
-      "repo": "sepia"
+      "owner": "electron-react-boilerplate",
+      "repo": "electron-react-boilerplate"
     }
   },
   "collective": {

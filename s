@@ -1,2 +1,2 @@
-pnpm start
+npm start
 
