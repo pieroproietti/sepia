@@ -19,11 +19,10 @@ At the end of user configuration, sepia is uninstalled.
 It is possible to have others first access system configurators that can be used with eggs passing the value during OEM system installation: ```sudo eggs install --oem your-first-access-system-configurator```.
 
  ## Develop
- I'm using [pnpm](https://pnpm.io/) here, so before of all, you must install it: ```sudo npm install pnpm -g```.
-
- * install packages: ```pnpm i```
- * start in dev mode: ```pnpm start```
- * build deb package: ```pnpm package```
+Actually using npm packed manager. 
+ * install packages: ```npm install```
+ * start in dev mode: ```npm run start```
+ * build deb package: ```npm run package```
 
 # 
 # Our mascote
